@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chi_tiet_don"
+    android:background="#E8D2B5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHI TIẾT ĐƠN HÀNG"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:gravity="center"
+            android:padding="12dp"/>
+
+        <!-- Thông tin đơn hàng -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN ĐƠN HÀNG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tvMaDon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã đơn hàng: DH001"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvNgayDat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngày đặt: 11/11/2026"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <!-- Thông tin sản phẩm -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN SẢN PHẨM"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTenGiay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên giày: Nike Air Force 1"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng: 1"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDonGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá: 1.500.000 VNĐ"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <!-- Thông tin người nhận -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN NGƯỜI NHẬN"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTenNguoiNhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Người nhận: Nguyễn Văn A"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvSoDienThoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại: 0123456789"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/tvDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ: Hà Nội"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:padding="8dp"/>
+
+        <!-- Tổng tiền -->
+        <TextView
+            android:id="@+id/tvTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: 1.500.000 VNĐ"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Trạng thái đơn hàng -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TRẠNG THÁI ĐƠN HÀNG"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tvTrangThai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chờ xác nhận"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#590907"
+            android:padding="10dp"/>
+
+        <!-- Nút hủy đơn -->
+        <Button
+            android:id="@+id/btnHuyDon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HỦY ĐƠN HÀNG"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#590907"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Nút quay lại -->
+        <Button
+            android:id="@+id/btnQuayLai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAY LẠI"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#A5A79B"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

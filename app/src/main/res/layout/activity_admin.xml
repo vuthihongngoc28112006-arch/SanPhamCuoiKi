@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin"
+    android:orientation="vertical"
+    android:background="#E8D2B5"
+    android:padding="16dp">
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÝ ĐƠN HÀNG"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#590907"
+        android:gravity="center"
+        android:padding="12dp"/>
+
+    <!-- Tìm kiếm đơn hàng -->
+    <SearchView
+        android:id="@+id/svTimKiemDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Nhập mã đơn hàng..."
+        android:iconifiedByDefault="false"
+        android:background="#FFFFFF"/>
+
+    <!-- Tiêu đề danh sách -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn hàng khách hàng"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#590907"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+    <!-- Danh sách đơn hàng -->
+    <ListView
+        android:id="@+id/lvQuanLyDon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#E8D2B5"
+        android:dividerHeight="8dp"
+        android:background="#A5A79B"
+        android:padding="4dp"/>
+
+    <!-- Nút quay lại -->
+    <Button
+        android:id="@+id/btnQuayLai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUAY LẠI"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#A5A79B"
+        android:layout_marginTop="12dp"/>
+
+
+</LinearLayout>

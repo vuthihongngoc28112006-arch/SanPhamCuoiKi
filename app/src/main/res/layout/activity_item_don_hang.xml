@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".item_don_hang"
+    android:orientation="vertical"
+    android:background="#A5A79B"
+    android:padding="14dp">
+    <!-- Mã đơn hàng -->
+    <TextView
+        android:id="@+id/tvMaDon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mã đơn hàng: DH001"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#590907"/>
+
+    <!-- Tên sản phẩm -->
+    <TextView
+        android:id="@+id/tvTenGiay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên giày: Nike Air Force 1"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Ngày đặt -->
+    <TextView
+        android:id="@+id/tvNgayDat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngày đặt: 11/11/2026"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Tổng tiền -->
+    <TextView
+        android:id="@+id/tvTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 1.500.000 VNĐ"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#590907"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Trạng thái -->
+    <TextView
+        android:id="@+id/tvTrangThai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trạng thái: Chờ xác nhận"
+        android:textSize="14sp"
+        android:textColor="#590907"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Nút xem chi tiết -->
+    <Button
+        android:id="@+id/btnXemChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XEM CHI TIẾT"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#590907"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
